@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth font and background feel */
+html, body {
+  @apply bg-cream font-sans text-gray-800;
+  scroll-behavior: smooth;
+}
+
+/* Animate transitions between cards */
+.card {
+  @apply shadow-soft rounded-3xl bg-white border border-green-100;
+}
+
+/* Buttons */
+button, .btn {
+  @apply transition-all duration-200;
+}
+
+/* Typeform feel for input focus */
+input:focus, select:focus, textarea:focus {
+  @apply ring-2 ring-primary/70 outline-none;
+}
+
+/* Small accent fade */
+.fade {
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
