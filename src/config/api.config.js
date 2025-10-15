@@ -6,10 +6,10 @@ const getBaseUrl = () => {
   
   // Default URLs based on environment
   if (import.meta.env.PROD) {
-    // Replace this with your deployed backend URL
-    return 'https://your-backend-url.herokuapp.com/api';
+    // Use live Render backend URL in production
+    return 'https://farmform.onrender.com/api';
   }
-  return 'http://localhost:5000/api';
+  return 'https://farmform.onrender.com/api';
 };
 
 // Axios instance with environment-specific config
